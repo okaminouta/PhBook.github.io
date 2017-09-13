@@ -1,0 +1,353 @@
+input:valid {
+    color: navy;
+}
+input:invalid {
+    color: red;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: normal;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: auto;
+}
+
+.title {
+    padding: 10px;
+    background: #FAFAFA;
+}
+
+.title h1 {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: normal;
+
+}
+
+.quickadd {
+    padding: 10px;
+    display: inline-block;
+
+}
+
+.search {
+    float: right;
+    margin: 9px 10px 0 0;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 6px;
+    background: #dddddd;
+}
+
+#QuickAdd {
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.quickaddForm {
+    height: fit-content;
+    padding: 10px;
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+    display: none;
+}
+
+.quickaddForm label {
+    position: relative;
+    display: block;
+    width: 165px;
+    height: 10px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.quickaddForm input, textarea {
+    border: 1px solid;
+    margin-top: 2px;
+    width: 70%;
+    padding: 10px;
+    /*font-weight:bold;*/
+    border-radius: 1px;
+
+}
+
+
+#sort {
+    float: right;
+    height: 18px;
+
+}
+
+#Add, #Cancel {
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    left: 385px;
+
+}
+
+#AddMail, #AddPhone, #Add, #Cancel, #sort, #searchBtn {
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.entry {
+    overflow: hidden;
+    background: rgb(230, 230, 230);
+
+    width: 960px;
+    height: 40px;
+    border-bottom: 1px solid;
+}
+
+.firstRow {
+
+    background: #788DE6;
+    width: 960px;
+    height: 40px;
+    border-bottom: 1px solid;
+}
+
+.firstRow li {
+    list-style-type: none;
+    display: inline-block;
+    width: 15%;
+    float: left;
+    padding: 11px;
+}
+
+.entry .name {
+    /*overflow: auto;*/
+    /*word-wrap: break-word;*/
+    width: 15%;
+    float: left;
+    padding: 11px;
+}
+
+.entry .email {
+    width: 15%;
+    float: left;
+    padding: 11px;
+}
+
+.entry .phone {
+    overflow: hidden;
+    width: 15%;
+    float: left;
+    padding: 11px;
+}
+
+.entry .address {
+    width: 15%;
+    float: left;
+    padding: 11px;
+}
+
+.entry .city {
+    width: 15%;
+    float: left;
+    padding: 11px;
+}
+
+.entry .del {
+    width: 30px;
+    margin-right: 2%;
+    float: right;
+    padding: 9px;
+}
+
+.show {
+    float: left;
+    margin: 7px 0 0 12px;
+    width: 36px;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 5px 3px 5px 11px;
+    background: #788DE6;
+    border-radius: 8px;
+    color: #FFF
+}
+
+.show a {
+    color: #FFF
+
+}
+
+/* окно вывода доп инф*/
+
+.windowName {
+    text-align: left;
+
+}
+
+.entry p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+
+}
+
+.entry .del a {
+    font-family: sans-serif;
+    color: #FFF;
+    font-size: 12px;
+    padding: 5px;
+    background: rgb(255, 100, 100);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.bgBlack {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 1;
+    display: none;
+    position: fixed;
+
+}
+
+.widowDataContact {
+
+    background: white;
+    display: none;
+    position: fixed;
+    width: 55%;
+    height: auto;
+    top: 8%;
+    left: 22.75%;
+    z-index: 5;
+    border-radius: 2px;
+
+}
+
+
+.widowDataSearch {
+
+    background: white;
+    display: none;
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 21.4%;
+    left: 11.2%;
+    /*margin: -250px 0 0 -125px;*/
+    z-index: 5;
+    border-radius: 2px;
+
+}
+
+.widowDataContact p {
+
+    width: 30%;
+    display: inline-block;
+
+}
+
+.widowDataContact span {
+
+    text-align: left;
+
+}
+
+.windowPhoneForm, .windowCityForm, .windowAddressForm, .windowEmailForm {
+    padding: 5px 5px 0 5px;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid;
+    margin: 0;
+    overflow: hidden;
+}
+
+.topRow {
+    height: 72px;
+    background: #788DE6;
+
+}
+
+.topRow h1 {
+    padding: 10px 0 0 25px;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.windowNameForm {
+    text-align: left;
+    display: inline-block;
+
+}
+
+.delbuttonS {
+    margin-top: 25px;
+    margin-right: 11px;
+    float: right;
+}
+
+.delbuttonS a {
+    font-family: sans-serif;
+    color: #FFF;
+    font-size: 12px;
+    padding: 5px;
+    background: rgb(255, 100, 100);
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+
+.editbutton {
+    margin-top: 12px;
+    margin-right: 7px;
+    float: right;
+
+}
+
+.editbutton a {
+    height: 12px;
+    width: 32px;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 5px 3px 5px 11px;
+    background: #afafaf;
+    border-radius: 8px;
+    color: #FFF;
+}
+#additionalphonesWindow {
+    margin-left: 225px;
+
+}
+#editContact {
+    float: right;
+    padding: 10px;
+    margin: 10px;
+}
+#additionalmailsWindow {
+    margin-left: 225px;
+}
